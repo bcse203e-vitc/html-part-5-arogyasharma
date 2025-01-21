@@ -1,0 +1,48 @@
+/* Styles for the gallery container */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  /* Styles for each gallery item */
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Image styles */
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Caption styles */
+  .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  /* Hover effect: enlarge image and show caption */
+  .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  .gallery-item:hover .caption {
+    opacity: 1;
+  }
+  
