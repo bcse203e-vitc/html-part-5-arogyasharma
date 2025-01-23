@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    padding: 5%;
+    margin: 5%;
+    background-color: #008CBA;
+    border: 5px solid #333;
+    transition: border 0.3s, border-color 0.3s;
+}
+
+.box:hover {
+    border-width: 10px;
+    border-color: #ff7e5f;
+}
